@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Akash Yadav | B.Tech CSE Student & Web Developer</title>
+  <meta name="title" content="Akash Yadav | B.Tech CSE Student & Web Developer">
+  <meta name="description" content="Portfolio of Akash Yadav - B.Tech CSE student at Lovely Professional University. Explore web development projects, algorithms, skills in HTML, CSS, JavaScript, Python, C++, and interactive live demos.">
+  <meta name="keywords" content="Akash Yadav, Web Developer, B.Tech CSE, Lovely Professional University, Frontend Developer, JavaScript, Python, C++, Portfolio, Delhi, India">
+  <meta name="author" content="Akash Yadav">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/yadavjiup50wallah-gif">
+  <meta property="og:title" content="Akash Yadav | B.Tech CSE Student & Web Developer">
+  <meta property="og:description" content="Explore Akash Yadav's developer portfolio featuring modern web applications, interactive games, DSA practice, and CV details.">
+  <meta property="og:image" content="akash/akash.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts: Poppins, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Schema.org JSON-LD for ATS & Google Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Akash Yadav",
+    "jobTitle": "Web Developer & Computer Science Student",
+    "url": "https://github.com/yadavjiup50wallah-gif",
+    "image": "akash/akash.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New Delhi",
+      "postalCode": "110084",
+      "addressCountry": "India"
+    },
+    "email": "yadavjiup50wallah@gmail.com",
+    "telephone": "+918233709073",
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Lovely Professional University"
+      }
+    ],
+    "sameAs": [
+      "https://github.com/yadavjiup50wallah-gif",
+      "https://www.linkedin.com/in/akash-yadav-44a2163b2/",
+      "https://leetcode.com/u/EpWxrJC9ne/""
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient Background Glow & Mesh Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="brand-logo" aria-label="Akash Yadav Home">
+        <span class="logo-code">&lt;/&gt;</span>
+        <span class="logo-text">Akash<span class="logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#training" class="nav-link">Training</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm hire-btn">
+          <span>Hire Me</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-inner">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#training" class="mobile-nav-link">Training</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-block mobile-hire-btn">Hire Me ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Left: Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">I'M A WEB DEVELOPER &amp; CSE STUDENT</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Akash Yadav</span><br>
+            <span class="typewriter-text" id="typewriter-headline">I build things for the web.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Enthusiastic Computer Science student focused on learning programming, problem-solving, and building modern, responsive web applications through practical hands-on projects.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <button class="btn btn-secondary" id="btn-download-cv">
+              <span>Download CV</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </button>
+          </div>
+
+          <!-- Technologies Ribbon -->
+          <div class="hero-tech-stack">
+            <span class="tech-stack-title">TECHNOLOGIES I WORK WITH</span>
+            <div class="tech-icons-row">
+              <div class="tech-badge" title="HTML5">
+                <span class="badge-code-icon color-html">HTML5</span>
+              </div>
+              <div class="tech-badge" title="CSS3">
+                <span class="badge-code-icon color-css">CSS3</span>
+              </div>
+              <div class="tech-badge" title="JavaScript">
+                <span class="badge-code-icon color-js">JS</span>
+              </div>
+              <div class="tech-badge" title="Python">
+                <span class="badge-code-icon color-py">Python</span>
+              </div>
+              <div class="tech-badge" title="C++">
+                <span class="badge-code-icon color-cpp">C++</span>
+              </div>
+              <div class="tech-badge" title="Git & GitHub">
+                <span class="badge-code-icon color-git">Git</span>
+              </div>
+              <div class="tech-badge" title="LeetCode">
+                <span class="badge-code-icon color-lc">LeetCode</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Avatar & Floating Code Card -->
+        <div class="hero-visual">
+          <div class="avatar-backdrop-glow"></div>
+          
+          <div class="avatar-wrapper">
+            <img src="akash/akash.jpeg" alt="Akash Yadav - B.Tech CSE Student and Web Developer" class="hero-avatar" id="hero-avatar-img">
+          </div>
+
+          <!-- Decorative Floating Code Editor Box -->
+          <div class="floating-code-card">
+            <div class="code-card-header">
+              <div class="window-controls">
+                <span class="control-dot dot-red"></span>
+                <span class="control-dot dot-yellow"></span>
+                <span class="control-dot dot-green"></span>
+              </div>
+              <span class="code-filename">&lt;/&gt; developer.js</span>
+              <span class="code-status-dot" title="Ready to code"></span>
+            </div>
+            <pre class="code-card-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Akash Yadav"</span>,
+  <span class="code-prop">education</span>: <span class="code-string">"B.Tech CSE @ LPU"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"C++"</span>],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building things for the web"</span>,
+  <span class="code-prop">status</span>: <span class="code-string">"Available for opportunities"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-tag-container">
+          <span class="section-tag">ABOUT ME</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative -->
+          <div class="about-text-col">
+            <h2 class="section-title">
+              I'm passionate about creating digital solutions &amp; solving problems.
+            </h2>
+            <p class="about-paragraph">
+              Currently pursuing my <strong>Bachelor of Technology in Computer Science &amp; Engineering</strong> at <strong>Lovely Professional University</strong> (2025–2029). I enjoy turning complex problem statements into clean, functional code and intuitive web interfaces.
+            </p>
+            <p class="about-paragraph">
+              My journey involves building hands-on projects, practicing Data Structures &amp; Algorithms on LeetCode, and constantly sharpening my frontend and programming fundamentals with modern software engineering practices.
+            </p>
+            
+            <div class="about-action-row">
+              <a href="#education" class="btn btn-outline">
+                <span>View Education Journey</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </a>
+              <a href="https://github.com/yadavjiup50wallah-gif" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                <span>View GitHub Profile</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Metric Stat Cards (2x2 Grid) -->
+          <div class="about-stats-grid">
+            <!-- Stat 1 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper icon-purple">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+              <div class="stat-info">
+                <h3 class="stat-number">3+</h3>
+                <p class="stat-label">Projects Built &amp; Live</p>
+              </div>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper icon-blue">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="stat-info">
+                <h3 class="stat-number">100+</h3>
+                <p class="stat-label">Problems Solved (DSA)</p>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper icon-indigo">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="stat-info">
+                <h3 class="stat-number">2025–29</h3>
+                <p class="stat-label">B.Tech CSE @ LPU</p>
+              </div>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper icon-cyan">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34c-1.2-.7-2-1.98-2-3.66 0-2.21 1.79-4 4-4h8c2.21 0 4 1.79 4 4 0 1.68-.8 2.96-2 3.66V17c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1v-2.34"></path></svg>
+              </div>
+              <div class="stat-info">
+                <h3 class="stat-number">100%</h3>
+                <p class="stat-label">Dedication to Learning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-tag-container text-center">
+          <span class="section-tag">MY SKILLS</span>
+        </div>
+        <h2 class="section-title text-center">Technologies I Master</h2>
+        <p class="section-subtitle text-center">
+          A combination of core programming languages, modern web development toolsets, and problem-solving disciplines.
+        </p>
+
+        <div class="skills-grid">
+          <!-- Skill 1: HTML & CSS -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-html">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L3 5l1.6 15L12 22l7.4-2L21 5l-9-3zm0 2.2l6.8 2.3-1.3 12.2-5.5 1.5-5.5-1.5L5.2 6.5 12 4.2z"/></svg>
+                </span>
+                <span class="skill-title">HTML &amp; CSS</span>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 2: JavaScript -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-js">
+                  <span class="text-pill-icon">JS</span>
+                </span>
+                <span class="skill-title">JavaScript (ES6+)</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 3: Python -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-python">
+                  <span class="text-pill-icon">PY</span>
+                </span>
+                <span class="skill-title">Python</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 4: C++ -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-cpp">
+                  <span class="text-pill-icon">C++</span>
+                </span>
+                <span class="skill-title">C++ (OOP &amp; STL)</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Problem Solving / DSA -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-dsa">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                </span>
+                <span class="skill-title">Problem Solving &amp; DSA</span>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Git & GitHub -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-git">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9H6"></path></svg>
+                </span>
+                <span class="skill-title">Git &amp; GitHub</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 7: Teamwork & Communication -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-teamwork">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </span>
+                <span class="skill-title">Teamwork &amp; Collaboration</span>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 8: Responsive Layouts -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-name-group">
+                <span class="skill-icon-pill icon-responsive">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </span>
+                <span class="skill-title">Responsive Web Design</span>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="--skill-percent: 92%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Areas of Interest Badges -->
+        <div class="interests-banner">
+          <div class="interests-title">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Core Interests &amp; Focus Areas:</span>
+          </div>
+          <div class="interest-tags">
+            <span class="interest-tag">⚡ Coding &amp; Problem Solving</span>
+            <span class="interest-tag">🚀 Learning New Technologies</span>
+            <span class="interest-tag">🛠️ Building Practical Projects</span>
+            <span class="interest-tag">📚 Reading Technical Books</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-tag-container text-center">
+          <span class="section-tag">FEATURED PROJECTS</span>
+        </div>
+        <h2 class="section-title text-center">Some of My Recent Work</h2>
+        <p class="section-subtitle text-center">
+          Explore my open-source projects. You can test interactive live versions directly or explore the source code on GitHub.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1: Amazon Clone -->
+          <article class="project-card" data-project="amazon">
+            <div class="project-card-image-wrap">
+              <span class="project-index">01</span>
+              <img src="assets/amazon-preview.png" alt="Amazon Clone Webpage Project by Akash Yadav" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <button class="btn btn-sm btn-primary overlay-btn" onclick="openProjectModal('amazon')">
+                  Preview Showcase ⚡
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Amazon Clone</h3>
+              <p class="project-description">
+                Made a simple Amazon-style webpage using only HTML and CSS with proper layout and design. Implemented navigation bar, promo banners, categorized product layout structure, and responsive styling.
+              </p>
+              
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Flexbox &amp; Grid</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/kumarashish08/Amazon-Clone" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <button class="project-link-demo" onclick="openProjectModal('amazon')">
+                  <span>Interactive Preview</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Tic Tac Toe Game -->
+          <article class="project-card" data-project="tictactoe">
+            <div class="project-card-image-wrap">
+              <span class="project-index">02</span>
+              <img src="assets/tictactoe-preview.jpg" alt="Tic Tac Toe Interactive Game by Akash Yadav" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <button class="btn btn-sm btn-primary overlay-btn" onclick="openProjectModal('tictactoe')">
+                  Play In Browser 🎮
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Tic Tac Toe Game</h3>
+              <p class="project-description">
+                Created a fully responsive Tic-Tac-Toe game with interactive gameplay. Designed clean UI and smooth grid layout. Works smoothly on both desktop and mobile screens with real-time winner checks.
+              </p>
+              
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Game Logic</span>
+                <span class="tag">DOM Manipulation</span>
+                <span class="tag">CSS Grid</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/kumarashish08/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <button class="project-link-demo" onclick="openProjectModal('tictactoe')">
+                  <span>Play Live Game</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Stone Paper Scissors -->
+          <article class="project-card" data-project="rps">
+            <div class="project-card-image-wrap">
+              <span class="project-index">03</span>
+              <img src="assets/rps-preview.jpg" alt="Stone Paper Scissors Web Game by Akash Yadav" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <button class="btn btn-sm btn-primary overlay-btn" onclick="openProjectModal('rps')">
+                  Play In Browser 🎮
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Stone Paper Scissors</h3>
+              <p class="project-description">
+                Developed a working Stone–Paper–Scissors game with clean interactive UI and rock-solid game logic. Includes real-time score updates, animated CPU move selection, and instant result feedback.
+              </p>
+              
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Randomization</span>
+                <span class="tag">State Management</span>
+                <span class="tag">CSS Animations</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/kumarashish08/Rock-Paper-Scissors" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <button class="project-link-demo" onclick="openProjectModal('rps')">
+                  <span>Play Live Game</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Calculator -->
+          <article class="project-card" data-project="calculator">
+            <div class="project-card-image-wrap">
+              <span class="project-index">04</span>
+              <img src="https://opengraph.githubassets.com/1/yadavjiup50wallah-gif/calculator" alt="Calculator Web Project by Akash Yadav" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <a href="https://github.com/yadavjiup50wallah-gif/calculator" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary overlay-btn">
+                  View On GitHub ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Calculator</h3>
+              <p class="project-description">
+                A simple calculator project built with HTML, CSS, and JavaScript, featuring a clean interface and basic arithmetic operations.
+              </p>
+              
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM Manipulation</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/yadavjiup50wallah-gif/calculator" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://github.com/yadavjiup50wallah-gif/calculator" target="_blank" rel="noopener noreferrer" class="project-link-demo">
+                  <span>Open Project Files</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING & SPECIALIZATION SECTION -->
+    <section class="section training-section" id="training">
+      <div class="container">
+        <div class="section-tag-container text-center">
+          <span class="section-tag">SPECIALIZED TRAINING</span>
+        </div>
+        <h2 class="section-title text-center">Professional Training</h2>
+        <p class="section-subtitle text-center">
+          Comprehensive hands-on training programs and specialized curriculum in AI engineering and modern software development.
+        </p>
+
+        <div class="training-showcase-wrapper">
+          <div class="training-hero-card">
+            <!-- Training Card Header -->
+            <div class="training-card-header">
+              <div class="training-header-left">
+                <div class="training-logo-box">
+                  <span class="training-ibm-badge">IBM</span>
+                </div>
+                <div class="training-title-meta">
+                  <div class="training-org-row">
+                    <span class="training-org-name">International Business Machines Corporation</span>
+                    <span class="training-sep">•</span>
+                    <span class="training-platform">Coursera</span>
+                    <span class="training-sep">•</span>
+                    <span class="training-badge-date">
+                      <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      Jun 2026 – Jul 2026
+                    </span>
+                    <span class="training-badge-status">
+                      <span class="badge-status-dot"></span>
+                      10-Course Certificate
+                    </span>
+                  </div>
+                  <h3 class="training-title">IBM AI Developer Professional Certificate</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Training Points List -->
+            <div class="training-body">
+              <h4 class="training-highlights-heading">Key Training Highlights &amp; Core Learnings:</h4>
+              <ul class="training-points-list">
+                <li class="training-point-item">
+                  <div class="point-icon-box">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span>Completed a 10-course professional certificate covering <strong>Artificial Intelligence</strong>, <strong>Generative AI</strong>, <strong>prompt engineering</strong>, <strong>Python</strong>, and software development fundamentals.</span>
+                </li>
+                <li class="training-point-item">
+                  <div class="point-icon-box">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span>Developed web applications using <strong>HTML, CSS, JavaScript, Python, and Flask</strong>, applying concepts from the software development lifecycle.</span>
+                </li>
+                <li class="training-point-item">
+                  <div class="point-icon-box">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span>Learned to develop AI-powered applications using Python and <strong>generative AI models, tools, and technologies</strong>.</span>
+                </li>
+                <li class="training-point-item">
+                  <div class="point-icon-box">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span>Applied generative AI and <strong>prompt engineering techniques</strong> to build practical AI-powered solutions and applications.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Skills & Tech Badges Footer -->
+            <div class="training-footer">
+              <span class="training-skills-label">Applied Skillset:</span>
+              <div class="training-skills-tags">
+                <span class="t-skill-tag">🤖 Artificial Intelligence</span>
+                <span class="t-skill-tag">✨ Generative AI</span>
+                <span class="t-skill-tag">💬 Prompt Engineering</span>
+                <span class="t-skill-tag">🐍 Python</span>
+                <span class="t-skill-tag">🌶️ Flask</span>
+                <span class="t-skill-tag">🌐 HTML / CSS / JS</span>
+                <span class="t-skill-tag">⚙️ SDLC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section certs-section" id="certifications">
+      <div class="container">
+        <div class="section-tag-container text-center">
+          <span class="section-tag">VERIFIED CREDENTIALS</span>
+        </div>
+        <h2 class="section-title text-center">Certifications</h2>
+        <p class="section-subtitle text-center">
+          Accredited credentials and certifications demonstrating proficiency across cloud fundamentals, C++ programming, and software engineering foundations.
+        </p>
+
+        <div class="certs-grid">
+          <!-- Cert Card 1: Oracle -->
+          <div class="cert-card">
+            <div class="cert-card-shine"></div>
+            <div class="cert-card-top">
+              <div class="cert-icon-wrapper icon-oracle">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 12a5 5 0 1 1 10 0 5 5 0 0 1-10 0z"/></svg>
+              </div>
+              <div class="cert-top-pills">
+                <span class="cert-date-badge">
+                  <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  May 2026
+                </span>
+                <div class="cert-verified-pill">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  <span>Certified</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="cert-card-content">
+              <div class="cert-issuer-badge">Oracle University</div>
+              <h3 class="cert-title">Oracle Certified Foundations Associate</h3>
+              <p class="cert-desc">
+                Validation of foundational understanding of cloud concepts, database infrastructure, security architectures, and core computing essentials.
+              </p>
+            </div>
+
+            <div class="cert-card-footer">
+              <div class="cert-tags">
+                <span class="cert-tag">Oracle</span>
+                <span class="cert-tag">Cloud</span>
+                <span class="cert-tag">Database</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert Card 2: Infosys Springboard -->
+          <div class="cert-card">
+            <div class="cert-card-shine"></div>
+            <div class="cert-card-top">
+              <div class="cert-icon-wrapper icon-infosys">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="cert-top-pills">
+                <span class="cert-date-badge">
+                  <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  Jul 2026
+                </span>
+                <div class="cert-verified-pill">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  <span>Certified</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-content">
+              <div class="cert-issuer-badge">Infosys | Springboard</div>
+              <h3 class="cert-title">Programming using C++</h3>
+              <p class="cert-desc">
+                Comprehensive certification covering modern C++, Object-Oriented Programming (OOP), memory management, STL containers, and algorithmic problem solving.
+              </p>
+            </div>
+
+            <div class="cert-card-footer">
+              <div class="cert-tags">
+                <span class="cert-tag">C++</span>
+                <span class="cert-tag">OOP</span>
+                <span class="cert-tag">STL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert Card 3: Neo-NIIT -->
+          <div class="cert-card">
+            <div class="cert-card-shine"></div>
+            <div class="cert-card-top">
+              <div class="cert-icon-wrapper icon-niit">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="cert-top-pills">
+                <span class="cert-date-badge">
+                  <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  May 2026
+                </span>
+                <div class="cert-verified-pill">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  <span>Certified</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-content">
+              <div class="cert-issuer-badge">Neo-NIIT Venture</div>
+              <h3 class="cert-title">Computer Programming</h3>
+              <p class="cert-desc">
+                Foundational computer programming accreditation focused on algorithmic design, structured programming principles, logic building, and computational thinking.
+              </p>
+            </div>
+
+            <div class="cert-card-footer">
+              <div class="cert-tags">
+                <span class="cert-tag">Programming</span>
+                <span class="cert-tag">Logic</span>
+                <span class="cert-tag">Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TIMELINE SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-tag-container text-center">
+          <span class="section-tag">ACADEMIC JOURNEY</span>
+        </div>
+        <h2 class="section-title text-center">Education &amp; Background</h2>
+        <p class="section-subtitle text-center">
+          A track record of consistent academic diligence and dedication to computer science fundamentals.
+        </p>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: B.Tech CSE -->
+          <div class="timeline-card active-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <div class="timeline-degree-group">
+                <h3 class="timeline-degree">Bachelor of Technology (B.Tech)</h3>
+                <span class="timeline-field">Computer Science and Engineering</span>
+              </div>
+              <span class="timeline-badge badge-active">2025 – 2029 (Ongoing)</span>
+            </div>
+            <div class="timeline-institution">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <span>Lovely Professional University — Jalandhar, Punjab</span>
+            </div>
+            <p class="timeline-desc">
+              Focusing on Data Structures &amp; Algorithms, Object-Oriented Programming (C++ / Python), Full-Stack Web Development, Database Management, and Computer Systems Architecture.
+            </p>
+            <div class="timeline-score">
+              <span class="score-pill">Current CGPA: <strong>7.98</strong></span>
+            </div>
+          </div>
+          
+
+          <!-- Timeline Item 2: Intermediate -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <div class="timeline-degree-group">
+                <h3 class="timeline-degree">Intermediate (Class XII)</h3>
+                <span class="timeline-field">Senior Secondary School Examination</span>
+              </div>
+              <span class="timeline-badge">2024 – 2025</span>
+            </div>
+            <div class="timeline-institution">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+              <span>Indira International High School, Kota, R.J.</span>
+            </div>
+            <div class="timeline-score">
+              <span class="score-pill">Percentage: <strong>78.6%</strong></span>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Matriculation -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <div class="timeline-degree-group">
+                <h3 class="timeline-degree">Matriculation (Class X)</h3>
+                <span class="timeline-field">Secondary School Examination</span>
+              </div>
+              <span class="timeline-badge">2023 – 2024</span>
+            </div>
+            <div class="timeline-institution">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+              <span>K.V Namkum, Ranchi, J.H.</span>
+            </div>
+            <div class="timeline-score">
+              <span class="score-pill">Percentage: <strong>86.4%</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILES & SOCIAL CHANNELS SECTION -->
+    <section class="section profiles-section">
+      <div class="container">
+        <div class="profiles-glass-card">
+          <div class="profiles-card-content">
+            <div class="profile-quote-block">
+              <div class="quote-mark">“</div>
+              <p class="quote-text">
+                Continuously writing code, solving algorithmic challenges, and building real-world practical web projects to develop robust software engineering craftsmanship.
+              </p>
+              <div class="quote-author">
+                <img src="akash/akash.jpeg" alt="Akash Yadav" class="quote-avatar">
+                <div class="quote-meta">
+                  <span class="quote-name">Akash Yadav</span>
+                  <span class="quote-role">B.Tech CSE Undergrad &amp; Web Developer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Column -->
+            <div class="social-channels-block">
+              <h4 class="channels-title">FOLLOW &amp; CONNECT WITH ME</h4>
+              <div class="social-links-grid">
+                <!-- GitHub -->
+                <a href="https://github.com/yadavjiup50wallah-gif" target="_blank" rel="noopener noreferrer" class="social-link-card" id="social-github">
+                  <div class="social-icon-box">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-platform">GitHub</span>
+                    <span class="social-handle">@yadavjiup50wallah-gif</span>
+                  </div>
+                  <svg class="social-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/akash-yadav-44a2163b2/" target="_blank" rel="noopener noreferrer" class="social-link-card" id="social-linkedin">
+                  <div class="social-icon-box">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-platform">LinkedIn</span>
+                    <span class="social-handle">in/akash-yadav-44a2163b2</span>
+                  </div>
+                  <svg class="social-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+
+                <!-- LeetCode -->
+                <a href="https://leetcode.com/u/EpWxrJC9ne/" target="_blank" rel="noopener noreferrer" class="social-link-card" id="social-leetcode">
+                  <div class="social-icon-box">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 .481.828l3.655 4.795a5.534 5.534 0 0 0 4.382 2.019 5.64 5.64 0 0 0 4.129-1.802l5.882-6.241a1.375 1.375 0 0 0 0-1.921 1.375 1.375 0 0 0-1.92 0l-5.882 6.241a2.89 2.89 0 0 1-2.115.923 2.836 2.836 0 0 1-2.247-1.035L4.407 15.68a3.187 3.187 0 0 1-.26-.453 3.09 3.09 0 0 1-.186-.549 3.05 3.05 0 0 1-.035-1.288 3.123 3.123 0 0 1 .687-1.189l3.854-4.126 5.406-5.788A1.375 1.375 0 0 0 13.483 0z"/></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-platform">LeetCode</span>
+                    <span class="social-handle"><u>EpWxrJC9ne</u></span>
+                  </div>
+                  <svg class="social-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+
+                <!-- Email Direct -->
+                <a href="mailto:yadavjiup50wallah@gmail.com" class="social-link-card" id="social-email">
+                  <div class="social-icon-box">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 4.712v-9.458l4.623 4.746zm-4.141-5.929h19.035l-9.517 7.761-9.518-7.761zm5.694 7.029l3.823 3.129 3.824-3.129 4.624 4.871h-16.895l4.624-4.871zm11.201 0.9l4.623-4.746v9.458l-4.623-4.712z"/></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-platform">Direct Email</span>
+                    <span class="social-handle">yadavjiup50wallah@gmail.com</span>
+                  </div>
+                  <svg class="social-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-tag-container text-center">
+          <span class="section-tag">LET'S WORK TOGETHER</span>
+        </div>
+        <h2 class="section-title text-center">Have a project or opportunity in mind?</h2>
+        <p class="section-subtitle text-center">
+          I'm currently seeking internship opportunities, freelance web development work, and tech collaborations. Reach out and let's create something extraordinary!
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col">
+            <h3 class="contact-card-title">Contact Information</h3>
+            <p class="contact-card-sub">Feel free to get in touch via email, phone, or any direct messaging channel.</p>
+
+            <div class="contact-detail-items">
+              <!-- Email Item -->
+              <a href="mailto:yadavjiup50wallah@gmail.com" class="contact-detail-row">
+                <div class="detail-icon-box">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Email Address</span>
+                  <span class="detail-value">yadavjiup50wallah@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Phone Item -->
+              <a href="tel:+918375915622" class="contact-detail-row">
+                <div class="detail-icon-box">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Phone &amp; WhatsApp</span>
+                  <span class="detail-value">+91 8233709073</span>
+                </div>
+              </a>
+
+              <!-- Location Item -->
+              <div class="contact-detail-row">
+                <div class="detail-icon-box">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">New Delhi, 110084, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick WhatsApp Action -->
+            <div class="whatsapp-cta">
+              <a href="https://wa.me/918375915622?text=Hi%20Akash,%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.993.543 1.78.847 2.796.847h.001c3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.769-5.766zm9.969 5.828c0 5.522-4.477 10-10 10-1.748 0-3.392-.451-4.832-1.242l-7.168 1.875 1.916-6.996c-.958-1.554-1.516-3.385-1.516-5.637 0-5.522 4.478-10 10-10 5.523 0 10 4.478 10 10z"/></svg>
+                <span>Chat Instantly on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-col">
+            <form class="glass-form" id="portfolio-contact-form">
+              <h3 class="form-title">Send a Direct Message</h3>
+
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="contact-name">Your Full Name *</label>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe" required autocomplete="name">
+                </div>
+                <div class="form-field">
+                  <label for="contact-email">Your Email Address *</label>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. john@example.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-subject">Subject *</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="e.g. Internship Inquiry / Web Project" required>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message">Your Message *</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Hello Akash, I came across your portfolio and wanted to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>© 2026 <strong>Akash Yadav</strong>. All rights reserved.</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-social-icons">
+          <a href="https://github.com/yadavjiup50wallah-gif" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/akash-yadav-44a2163b2/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/EpWxrJC9ne/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 .481.828l3.655 4.795a5.534 5.534 0 0 0 4.382 2.019 5.64 5.64 0 0 0 4.129-1.802l5.882-6.241a1.375 1.375 0 0 0 0-1.921 1.375 1.375 0 0 0-1.92 0l-5.882 6.241a2.89 2.89 0 0 1-2.115.923 2.836 2.836 0 0 1-2.247-1.035L4.407 15.68a3.187 3.187 0 0 1-.26-.453 3.09 3.09 0 0 1-.186-.549 3.05 3.05 0 0 1-.035-1.288 3.123 3.123 0 0 1 .687-1.189l3.854-4.126 5.406-5.788A1.375 1.375 0 0 0 13.483 0z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p>Made with <span class="heart-pulse">❤️</span> by <strong>Akash</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- ============================================== -->
+  <!-- MODAL: PLAYABLE TIC TAC TOE GAME               -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="modal-tictactoe" role="dialog" aria-modal="true" aria-labelledby="ttt-modal-title">
+    <div class="modal-content glass-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">INTERACTIVE GAME</span>
+          <h3 id="ttt-modal-title" class="modal-title">⚡ Neon Tic-Tac-Toe</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-tictactoe')" aria-label="Close modal">✕</button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Game Mode Selection -->
+        <div class="game-controls-bar">
+          <div class="mode-toggle">
+            <button class="mode-btn active" id="ttt-mode-ai" onclick="setTTTMode('ai')">vs CPU (AI)</button>
+            <button class="mode-btn" id="ttt-mode-pvp" onclick="setTTTMode('pvp')">2 Players</button>
+          </div>
+          <button class="btn btn-sm btn-outline" onclick="resetTTTGame()">Restart Game 🔄</button>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="ttt-scoreboard">
+          <div class="score-card player-x">
+            <span class="score-label" id="ttt-p1-label">Player (X)</span>
+            <span class="score-count" id="ttt-score-x">0</span>
+          </div>
+          <div class="score-card ties">
+            <span class="score-label">Draws</span>
+            <span class="score-count" id="ttt-score-ties">0</span>
+          </div>
+          <div class="score-card player-o">
+            <span class="score-label" id="ttt-p2-label">CPU (O)</span>
+            <span class="score-count" id="ttt-score-o">0</span>
+          </div>
+        </div>
+
+        <div class="game-status-text" id="ttt-status">Your turn (X)</div>
+
+        <!-- 3x3 Grid -->
+        <div class="ttt-grid" id="ttt-grid">
+          <button class="ttt-cell" data-index="0"></button>
+          <button class="ttt-cell" data-index="1"></button>
+          <button class="ttt-cell" data-index="2"></button>
+          <button class="ttt-cell" data-index="3"></button>
+          <button class="ttt-cell" data-index="4"></button>
+          <button class="ttt-cell" data-index="5"></button>
+          <button class="ttt-cell" data-index="6"></button>
+          <button class="ttt-cell" data-index="7"></button>
+          <button class="ttt-cell" data-index="8"></button>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/kumarashish08/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+          <span>View Source Code on GitHub</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: PLAYABLE STONE PAPER SCISSORS GAME      -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="modal-rps" role="dialog" aria-modal="true" aria-labelledby="rps-modal-title">
+    <div class="modal-content glass-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">INTERACTIVE GAME</span>
+          <h3 id="rps-modal-title" class="modal-title">🎮 Stone Paper Scissors</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-rps')" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Scoreboard -->
+        <div class="rps-scoreboard">
+          <div class="rps-score-pill">
+            <span class="rps-score-name">YOU</span>
+            <span class="rps-score-num" id="rps-user-score">0</span>
+          </div>
+          <span class="rps-vs-text">VS</span>
+          <div class="rps-score-pill">
+            <span class="rps-score-name">CPU</span>
+            <span class="rps-score-num" id="rps-cpu-score">0</span>
+          </div>
+        </div>
+
+        <!-- Arena Battle Display -->
+        <div class="rps-arena">
+          <div class="arena-fighter" id="user-fighter">
+            <div class="fighter-hand" id="user-hand">✊</div>
+            <span class="fighter-title">Your Choice</span>
+          </div>
+          <div class="arena-result" id="rps-result-message">Choose your weapon!</div>
+          <div class="arena-fighter" id="cpu-fighter">
+            <div class="fighter-hand" id="cpu-hand">✊</div>
+            <span class="fighter-title">CPU Choice</span>
+          </div>
+        </div>
+
+        <!-- Move Buttons -->
+        <div class="rps-buttons-group">
+          <button class="rps-btn" onclick="playRPS('stone')">
+            <span class="rps-emoji">🪨</span>
+            <span class="rps-name">Stone</span>
+          </button>
+          <button class="rps-btn" onclick="playRPS('paper')">
+            <span class="rps-emoji">📄</span>
+            <span class="rps-name">Paper</span>
+          </button>
+          <button class="rps-btn" onclick="playRPS('scissors')">
+            <span class="rps-emoji">✂️</span>
+            <span class="rps-name">Scissors</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-ghost btn-sm" onclick="resetRPSGame()">Reset Score 🔄</button>
+        <a href="https://github.com/kumarashish08/Rock-Paper-Scissors" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+          <span>GitHub Repo</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: AMAZON CLONE SHOWCASE                   -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="modal-amazon" role="dialog" aria-modal="true" aria-labelledby="amazon-modal-title">
+    <div class="modal-content glass-card modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">PROJECT SHOWCASE</span>
+          <h3 id="amazon-modal-title" class="modal-title">🛒 Amazon E-Commerce Clone</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-amazon')" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="showcase-hero-img">
+          <img src="assets/amazon-preview.png" alt="Amazon Clone Preview" class="showcase-img">
+        </div>
+
+        <div class="showcase-info">
+          <h4>Project Architecture &amp; Highlights:</h4>
+          <ul class="showcase-features-list">
+            <li><strong>Responsive Navigation Bar:</strong> Features Amazon's multi-tiered header with address selector, search category dropdown, search input, return &amp; orders link, and shopping cart counter.</li>
+            <li><strong>Hero Deals &amp; Banner Carousel:</strong> Clean visual banner with gradients showcasing promotional campaigns and special deals.</li>
+            <li><strong>Multi-Column Category Grid:</strong> Responsive card grid displaying products across Tech, Gaming, Footwear, Fashion, and Home essentials with flexbox/grid layout.</li>
+            <li><strong>Pure HTML5 &amp; CSS3:</strong> Built entirely with native web standards to maintain high performance and semantic structure without heavy runtime dependencies.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/kumarashish08/Amazon-Clone" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span>Explore Source Code on GitHub</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: CV VIEWER & DOWNLOAD/PRINT MODAL        -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="modal-cv" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <div class="modal-content glass-card modal-lg cv-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">CURRICULUM VITAE</span>
+          <h3 id="cv-modal-title" class="modal-title">📄 Akash Yadav — Resume</h3>
+        </div>
+        <div class="cv-header-actions">
+          <button class="btn btn-primary btn-sm" onclick="window.print()">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print / Save PDF</span>
+          </button>
+          <button class="modal-close" onclick="closeModal('modal-cv')" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-body cv-printable-sheet" id="printable-cv">
+        <!-- CV Header -->
+        <div class="cv-sheet-header">
+          <div class="cv-sheet-avatar">
+            <img src="akash/akash.jpeg" alt="Akash Yadav">
+          </div>
+          <div class="cv-sheet-meta">
+            <h1 class="cv-name">AKASH YADAV</h1>
+            <p class="cv-sub">B.Tech in Computer Science and Engineering | Web Developer</p>
+            <div class="cv-contact-pills">
+              <span>📞 +91 8375915622</span>
+              <span>✉️ yadavjiup50wallah@gmail.com</span>
+              <span>📍 New Delhi, 110084, India</span>
+            </div>
+            <div class="cv-links-row">
+              <a href="https://github.com/yadavjiup50wallah-gif" target="_blank">github.com/yadavjiup50wallah-gif</a> |
+              <a href="https://www.linkedin.com/in/akash-yadav-44a2163b2/" target="_blank">linkedin.com/in/akash-yadav-44a2163b2</a> |
+              <a href="https://leetcode.com/u/EpWxrJC9ne/" target="_blank">leetcode.com/u/EpWxrJC9ne</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="cv-divider">
+
+        <!-- CV Summary -->
+        <div class="cv-section">
+          <h2 class="cv-sec-title">About Me</h2>
+          <p class="cv-sec-body">
+            Enthusiastic Computer Science Engineering student focused on learning programming, problem-solving, and web development through practical projects. Dedicated to mastering modern web technologies, Data Structures &amp; Algorithms, and writing clean, scalable code.
+          </p>
+        </div>
+
+        <!-- CV Skills -->
+        <div class="cv-section">
+          <h2 class="cv-sec-title">Technical Expertise &amp; Skills</h2>
+          <p class="cv-sec-body">
+            <strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Responsive Layouts, Flexbox, CSS Grid<br>
+            <strong>Programming Languages:</strong> Python, C++, JavaScript<br>
+            <strong>Developer Tools:</strong> Git, GitHub, VS Code, Browser DevTools<br>
+            <strong>Core Competencies:</strong> Problem Solving, Data Structures &amp; Algorithms, Teamwork &amp; Collaboration
+          </p>
+        </div>
+
+        <!-- CV Projects -->
+        <div class="cv-section">
+          <h2 class="cv-sec-title">Projects</h2>
+          <div class="cv-proj-item">
+            <strong>Amazon Clone</strong> (<a href="https://github.com/kumarashish08/Amazon-Clone" target="_blank">github.com/kumarashish08/Amazon-Clone</a>)
+            <p>Made a simple Amazon-style webpage using only HTML and CSS with proper layout and design. Implemented navigation bar, layout structure and proper styling.</p>
+          </div>
+          <div class="cv-proj-item">
+            <strong>Tic Tac Toe Game</strong> (<a href="https://github.com/kumarashish08/Tic-Tac-Toe" target="_blank">github.com/kumarashish08/Tic-Tac-Toe</a>)
+            <p>Created a fully responsive Tic-Tac-Toe game with interactive gameplay. Designed clean UI and smooth grid layout. Works on desktop and mobile screens without issues.</p>
+          </div>
+          <div class="cv-proj-item">
+            <strong>Stone Paper Scissors</strong> (<a href="https://github.com/kumarashish08/Rock-Paper-Scissors" target="_blank">github.com/kumarashish08/Rock-Paper-Scissors</a>)
+            <p>Developed a working Stone–Paper–Scissors game with simple UI and correct game logic. Includes score updates and real-time result animations.</p>
+          </div>
+        </div>
+
+        <!-- CV Training -->
+        <div class="cv-section">
+          <h2 class="cv-sec-title">Training</h2>
+          <div class="cv-training-item">
+            <div class="cv-row-between">
+              <strong>IBM AI Developer | Coursera</strong>
+              <span class="cv-edu-year">Jun 2026 – Jul 2026</span>
+            </div>
+            <p class="cv-org-sub">International Business Machines Corporation | <a href="https://drive.google.com/file/d/1okALGfPhnEYfbv3B5XhIJoe2pCPTPvXj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificate ↗</a></p>
+            <ul class="cv-bullet-list">
+              <li>Completed a 10-course professional certificate covering Artificial Intelligence, Generative AI, prompt engineering, Python, and software development fundamentals.</li>
+              <li>Developed web applications using HTML, CSS, JavaScript, Python, and Flask, applying concepts from the software development lifecycle.</li>
+              <li>Learned to develop AI-powered applications using Python and generative AI models, tools, and technologies.</li>
+              <li>Applied generative AI and prompt engineering techniques to build AI-powered solutions and applications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CV Certifications -->
+        <div class="cv-section">
+          <h2 class="cv-sec-title">Certificates</h2>
+          <div class="cv-cert-row">
+            <span>• <strong>Oracle Certified Foundations Associate</strong> | <a href="https://drive.google.com/file/d/1-XCb3XGCYEFwUMpUWSVIy-20ViFwPOlN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Oracle University ↗</a></span>
+            <span class="cv-edu-year">May 2026</span>
+          </div>
+          <div class="cv-cert-row">
+            <span>• <strong>Programming using C++</strong> | <a href="https://drive.google.com/file/d/1djTV8qMMcYMfKx6f9PXwh9V8gVeQntNo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Infosys | Springboard ↗</a></span>
+            <span class="cv-edu-year">Jul 2026</span>
+          </div>
+          <div class="cv-cert-row">
+            <span>• <strong>Computer Programming</strong> | <a href="https://drive.google.com/file/d/1-XCb3XGCYEFwUMpUWSVIy-20ViFwPOlN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Neo-NIIT Venture ↗</a></span>
+            <span class="cv-edu-year">May 2026</span>
+          </div>
+        </div>
+
+        <!-- CV Education -->
+        <div class="cv-section">
+          <h2 class="cv-sec-title">Education</h2>
+          <div class="cv-edu-row">
+            <div>
+              <strong>Bachelor of Technology — Computer Science &amp; Engineering</strong><br>
+              Lovely Professional University, Jalandhar, Punjab
+            </div>
+            <div class="cv-edu-year">2025 – 2029</div>
+          </div>
+          <div class="cv-edu-row">
+            <div>
+              <strong>Intermediate (Class XII)</strong> — 78.6%<br>
+              Indira International High School, Kota, R.J.
+            </div>
+            <div class="cv-edu-year">2024 – 2025</div>
+          </div>
+          <div class="cv-edu-row">
+            <div>
+              <strong>Matriculation (Class X)</strong> — 86.4%<br>
+              K.V Namkum, Ranchi, J.H.
+            </div>
+            <div class="cv-edu-year">2023 – 2024</div>
+          </div>
+        </div>
+
+        <!-- CV Interests -->
+        <div class="cv-section">
+          <h2 class="cv-sec-title">Interests</h2>
+          <p class="cv-sec-body">Coding &amp; Problem Solving, Learning New Technologies, Building Web Projects, Reading Books.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
